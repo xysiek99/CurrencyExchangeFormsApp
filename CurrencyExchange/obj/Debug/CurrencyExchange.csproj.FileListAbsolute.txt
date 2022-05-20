@@ -1,0 +1,11 @@
+C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\bin\Debug\CurrencyExchange.exe.config
+C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\bin\Debug\CurrencyExchange.exe
+C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\bin\Debug\CurrencyExchange.pdb
+C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.csprojAssemblyReference.cache
+C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.MainForm.resources
+C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.Properties.Resources.resources
+C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.csproj.GenerateResource.cache
+C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.csproj.CoreCompileInputs.cache
+C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.exe
+C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.pdb
+C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.DollarWindow.resources
