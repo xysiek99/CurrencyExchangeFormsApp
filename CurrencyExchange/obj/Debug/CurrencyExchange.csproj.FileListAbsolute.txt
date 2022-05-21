@@ -9,3 +9,4 @@ C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAW
 C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.exe
 C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.pdb
 C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.DollarWindow.resources
+C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.CheckPricesWindow.resources

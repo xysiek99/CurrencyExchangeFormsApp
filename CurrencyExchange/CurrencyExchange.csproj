@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheckPricesWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckPricesWindow.Designer.cs">
+      <DependentUpon>CheckPricesWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="DollarPic.cs" />
     <Compile Include="DollarWindow.cs">
       <SubType>Form</SubType>
@@ -59,8 +65,19 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="KASETY_407_02DataSet.cs">
+      <DependentUpon>KASETY_407_02DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KASETY_407_02DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KASETY_407_02DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CheckPricesWindow.resx">
+      <DependentUpon>CheckPricesWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DollarWindow.resx">
       <DependentUpon>DollarWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -76,6 +93,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="KASETY_407_02DataSet.xsc">
+      <DependentUpon>KASETY_407_02DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KASETY_407_02DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KASETY_407_02DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KASETY_407_02DataSet.xss">
+      <DependentUpon>KASETY_407_02DataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

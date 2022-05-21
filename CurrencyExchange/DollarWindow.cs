@@ -12,7 +12,7 @@ namespace CurrencyExchange
 {
     public partial class DollarWindow : Form
     {
-        DollarPic dollarPic;
+        DollarPic dollarPic; // moznaby dodac parametr przy pomocy ktorego wybiera z listy dostepnych (EUR, USD, GBP)...
 
         public DollarWindow()
         {

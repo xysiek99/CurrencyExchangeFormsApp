@@ -17,6 +17,7 @@ namespace CurrencyExchange
             InitializeComponent();
         }
 
+        // buttonCheckPrice
         private void buttonCheckPrice_MouseEnter(object sender, EventArgs e)
         {
             buttonCheckPrice.BackColor = Color.LightGreen;
@@ -27,6 +28,13 @@ namespace CurrencyExchange
             buttonCheckPrice.BackColor = Color.Transparent;
         }
 
+        private void buttonCheckPrice_Click(object sender, EventArgs e)
+        {
+            CheckPricesWindow checkPricesWindow = new CheckPricesWindow();
+            checkPricesWindow.Show();
+        }
+
+        // buttonCorrectPrice
         private void buttonCorrectPrice_MouseEnter(object sender, EventArgs e)
         {
             buttonCorrectPrice.BackColor = Color.IndianRed;
@@ -37,6 +45,7 @@ namespace CurrencyExchange
             buttonCorrectPrice.BackColor = Color.Transparent;
         }
 
+        // buttonDollar
         private void buttonDollar_MouseEnter(object sender, EventArgs e)
         {
             buttonDollar.BackColor = Color.Gold;

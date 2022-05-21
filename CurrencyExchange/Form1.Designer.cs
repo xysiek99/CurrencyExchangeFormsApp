@@ -41,6 +41,7 @@
             this.buttonCheckPrice.TabIndex = 0;
             this.buttonCheckPrice.Text = "Check Prices";
             this.buttonCheckPrice.UseVisualStyleBackColor = true;
+            this.buttonCheckPrice.Click += new System.EventHandler(this.buttonCheckPrice_Click);
             this.buttonCheckPrice.MouseEnter += new System.EventHandler(this.buttonCheckPrice_MouseEnter);
             this.buttonCheckPrice.MouseLeave += new System.EventHandler(this.buttonCheckPrice_MouseLeave);
             // 
