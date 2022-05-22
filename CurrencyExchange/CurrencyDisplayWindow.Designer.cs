@@ -1,6 +1,6 @@
 ﻿namespace CurrencyExchange
 {
-    partial class DollarWindow
+    partial class CurrencyDisplayWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -63,7 +63,7 @@
             this.resetPositionButton.UseVisualStyleBackColor = true;
             this.resetPositionButton.Click += new System.EventHandler(this.resetPositionButton_Click);
             // 
-            // DollarWindow
+            // CurrencyDisplayWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -71,8 +71,8 @@
             this.Controls.Add(this.resetPositionButton);
             this.Controls.Add(this.rightButton);
             this.Controls.Add(this.leftButton);
-            this.Name = "DollarWindow";
-            this.Text = "Dollar2D";
+            this.Name = "CurrencyDisplayWindow";
+            this.Text = "Display Currency";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.DollarWindow_Paint);
             this.ResumeLayout(false);
 

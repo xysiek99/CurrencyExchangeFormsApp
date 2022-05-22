@@ -30,14 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.cURRENCYBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.kASETY_407_02DataSet = new CurrencyExchange.KASETY_407_02DataSet();
-            this.___CURRENCYTableAdapter = new CurrencyExchange.KASETY_407_02DataSetTableAdapters.@__CURRENCYTableAdapter();
-            this.currencyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.symbolDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.seacrhSymbolLabel = new System.Windows.Forms.Label();
             this.searchSymbolBox = new System.Windows.Forms.TextBox();
+            this.currencyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.symbolDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cURRENCYBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kASETY_407_02DataSet = new CurrencyExchange.KASETY_407_02DataSet();
+            this.___CURRENCYTableAdapter = new CurrencyExchange.KASETY_407_02DataSetTableAdapters.@__CURRENCYTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cURRENCYBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kASETY_407_02DataSet)).BeginInit();
@@ -45,6 +45,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -58,38 +59,6 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(454, 690);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // cURRENCYBindingSource
-            // 
-            this.cURRENCYBindingSource.DataMember = "__CURRENCY";
-            this.cURRENCYBindingSource.DataSource = this.kASETY_407_02DataSet;
-            // 
-            // kASETY_407_02DataSet
-            // 
-            this.kASETY_407_02DataSet.DataSetName = "KASETY_407_02DataSet";
-            this.kASETY_407_02DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ___CURRENCYTableAdapter
-            // 
-            this.___CURRENCYTableAdapter.ClearBeforeFill = true;
-            // 
-            // currencyDataGridViewTextBoxColumn
-            // 
-            this.currencyDataGridViewTextBoxColumn.DataPropertyName = "Currency";
-            this.currencyDataGridViewTextBoxColumn.HeaderText = "Currency";
-            this.currencyDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.currencyDataGridViewTextBoxColumn.Name = "currencyDataGridViewTextBoxColumn";
-            this.currencyDataGridViewTextBoxColumn.ReadOnly = true;
-            this.currencyDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // symbolDataGridViewTextBoxColumn
-            // 
-            this.symbolDataGridViewTextBoxColumn.DataPropertyName = "Symbol";
-            this.symbolDataGridViewTextBoxColumn.HeaderText = "Symbol";
-            this.symbolDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.symbolDataGridViewTextBoxColumn.Name = "symbolDataGridViewTextBoxColumn";
-            this.symbolDataGridViewTextBoxColumn.ReadOnly = true;
-            this.symbolDataGridViewTextBoxColumn.Width = 75;
             // 
             // Price
             // 
@@ -115,9 +84,41 @@
             this.searchSymbolBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.searchSymbolBox.Location = new System.Drawing.Point(16, 40);
             this.searchSymbolBox.Name = "searchSymbolBox";
-            this.searchSymbolBox.Size = new System.Drawing.Size(174, 34);
+            this.searchSymbolBox.Size = new System.Drawing.Size(140, 27);
             this.searchSymbolBox.TabIndex = 2;
             this.searchSymbolBox.TextChanged += new System.EventHandler(this.searchSymbolBox_TextChanged);
+            // 
+            // currencyDataGridViewTextBoxColumn
+            // 
+            this.currencyDataGridViewTextBoxColumn.DataPropertyName = "Currency";
+            this.currencyDataGridViewTextBoxColumn.HeaderText = "Currency";
+            this.currencyDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.currencyDataGridViewTextBoxColumn.Name = "currencyDataGridViewTextBoxColumn";
+            this.currencyDataGridViewTextBoxColumn.ReadOnly = true;
+            this.currencyDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // symbolDataGridViewTextBoxColumn
+            // 
+            this.symbolDataGridViewTextBoxColumn.DataPropertyName = "Symbol";
+            this.symbolDataGridViewTextBoxColumn.HeaderText = "Symbol";
+            this.symbolDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.symbolDataGridViewTextBoxColumn.Name = "symbolDataGridViewTextBoxColumn";
+            this.symbolDataGridViewTextBoxColumn.ReadOnly = true;
+            this.symbolDataGridViewTextBoxColumn.Width = 75;
+            // 
+            // cURRENCYBindingSource
+            // 
+            this.cURRENCYBindingSource.DataMember = "__CURRENCY";
+            this.cURRENCYBindingSource.DataSource = this.kASETY_407_02DataSet;
+            // 
+            // kASETY_407_02DataSet
+            // 
+            this.kASETY_407_02DataSet.DataSetName = "KASETY_407_02DataSet";
+            this.kASETY_407_02DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ___CURRENCYTableAdapter
+            // 
+            this.___CURRENCYTableAdapter.ClearBeforeFill = true;
             // 
             // CheckPricesWindow
             // 

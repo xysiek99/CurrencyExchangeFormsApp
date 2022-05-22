@@ -35,31 +35,31 @@ namespace CurrencyExchange
         }
 
         // buttonCorrectPrice
-        private void buttonCorrectPrice_MouseEnter(object sender, EventArgs e)
+        private void buttonEditData_MouseEnter(object sender, EventArgs e)
         {
-            buttonCorrectPrice.BackColor = Color.IndianRed;
+            buttonEditData.BackColor = Color.IndianRed;
         }
 
-        private void buttonCorrectPrice_MouseLeave(object sender, EventArgs e)
+        private void buttonEditData_MouseLeave(object sender, EventArgs e)
         {
-            buttonCorrectPrice.BackColor = Color.Transparent;
+            buttonEditData.BackColor = Color.Transparent;
         }
 
         // buttonDollar
-        private void buttonDollar_MouseEnter(object sender, EventArgs e)
+        private void buttonShowCurrency_MouseEnter(object sender, EventArgs e)
         {
-            buttonDollar.BackColor = Color.Gold;
+            buttonShowCurrency.BackColor = Color.Gold;
         }
 
-        private void buttonDollar_MouseLeave(object sender, EventArgs e)
+        private void buttonShowCurrency_MouseLeave(object sender, EventArgs e)
         {
-            buttonDollar.BackColor = Color.Transparent;
+            buttonShowCurrency.BackColor = Color.Transparent;
         }
 
-        private void buttonDollar_Click(object sender, EventArgs e)
+        private void buttonShowCurrency_Click(object sender, EventArgs e)
         {
-            DollarWindow dollarWindow = new DollarWindow();
-            dollarWindow.Show(); // Moze dodac jakis warunek zeby nie mozna bylo otworzyc okienka jak juz jest otwarte? [NIEKONIECZNE]
+            CurrencyDisplayWindow_Subwindow currencyChoiceWindow = new CurrencyDisplayWindow_Subwindow();
+            currencyChoiceWindow.Show();
         }
     }
 }

@@ -10,42 +10,42 @@ using System.Windows.Forms;
 
 namespace CurrencyExchange
 {
-    public partial class DollarWindow : Form
+    public partial class CurrencyDisplayWindow : Form
     {
-        DollarPic dollarPic; // moznaby dodac parametr przy pomocy ktorego wybiera z listy dostepnych (EUR, USD, GBP)...
+        CurrencyPic currencyPic;
 
-        public DollarWindow()
+        public CurrencyDisplayWindow(string currencyPicPath)
         {
             int windowWidth = this.Size.Width;
             int windowHeight = this.Size.Height;
 
-            dollarPic = new DollarPic();
-            dollarPic.X = windowWidth;
-            dollarPic.Y = windowHeight / 2;
+            currencyPic = new CurrencyPic(currencyPicPath);
+            currencyPic.X = windowWidth;
+            currencyPic.Y = windowHeight / 2;
 
             InitializeComponent();
         }
 
         private void DollarWindow_Paint(object sender, PaintEventArgs e)
         {
-            dollarPic.Draw(e.Graphics);
+            currencyPic.Draw(e.Graphics);
         }
 
         private void leftButton_Click(object sender, EventArgs e)
         {
-            dollarPic.Direction -= 5;
+            currencyPic.Direction -= 5;
             Refresh();
         }
 
         private void rightButton_Click(object sender, EventArgs e)
         {
-            dollarPic.Direction += 5;
+            currencyPic.Direction += 5;
             Refresh();
         }
 
         private void resetPositionButton_Click(object sender, EventArgs e)
         {
-            dollarPic.Direction = 0;
+            currencyPic.Direction = 0;
             Refresh();
         }
     }

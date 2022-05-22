@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.buttonCheckPrice = new System.Windows.Forms.Button();
-            this.buttonCorrectPrice = new System.Windows.Forms.Button();
-            this.buttonDollar = new System.Windows.Forms.Button();
+            this.buttonEditData = new System.Windows.Forms.Button();
+            this.buttonShowCurrency = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonCheckPrice
@@ -45,36 +45,36 @@
             this.buttonCheckPrice.MouseEnter += new System.EventHandler(this.buttonCheckPrice_MouseEnter);
             this.buttonCheckPrice.MouseLeave += new System.EventHandler(this.buttonCheckPrice_MouseLeave);
             // 
-            // buttonCorrectPrice
+            // buttonEditData
             // 
-            this.buttonCorrectPrice.Location = new System.Drawing.Point(43, 217);
-            this.buttonCorrectPrice.Name = "buttonCorrectPrice";
-            this.buttonCorrectPrice.Size = new System.Drawing.Size(267, 60);
-            this.buttonCorrectPrice.TabIndex = 1;
-            this.buttonCorrectPrice.Text = "Correct Price";
-            this.buttonCorrectPrice.UseVisualStyleBackColor = true;
-            this.buttonCorrectPrice.MouseEnter += new System.EventHandler(this.buttonCorrectPrice_MouseEnter);
-            this.buttonCorrectPrice.MouseLeave += new System.EventHandler(this.buttonCorrectPrice_MouseLeave);
+            this.buttonEditData.Location = new System.Drawing.Point(43, 217);
+            this.buttonEditData.Name = "buttonEditData";
+            this.buttonEditData.Size = new System.Drawing.Size(267, 60);
+            this.buttonEditData.TabIndex = 1;
+            this.buttonEditData.Text = "Edit Data";
+            this.buttonEditData.UseVisualStyleBackColor = true;
+            this.buttonEditData.MouseEnter += new System.EventHandler(this.buttonEditData_MouseEnter);
+            this.buttonEditData.MouseLeave += new System.EventHandler(this.buttonEditData_MouseLeave);
             // 
-            // buttonDollar
+            // buttonShowCurrency
             // 
-            this.buttonDollar.Location = new System.Drawing.Point(43, 321);
-            this.buttonDollar.Name = "buttonDollar";
-            this.buttonDollar.Size = new System.Drawing.Size(267, 60);
-            this.buttonDollar.TabIndex = 2;
-            this.buttonDollar.Text = "Dollar 2D";
-            this.buttonDollar.UseVisualStyleBackColor = true;
-            this.buttonDollar.Click += new System.EventHandler(this.buttonDollar_Click);
-            this.buttonDollar.MouseEnter += new System.EventHandler(this.buttonDollar_MouseEnter);
-            this.buttonDollar.MouseLeave += new System.EventHandler(this.buttonDollar_MouseLeave);
+            this.buttonShowCurrency.Location = new System.Drawing.Point(43, 321);
+            this.buttonShowCurrency.Name = "buttonShowCurrency";
+            this.buttonShowCurrency.Size = new System.Drawing.Size(267, 60);
+            this.buttonShowCurrency.TabIndex = 2;
+            this.buttonShowCurrency.Text = "Show 2D Currency";
+            this.buttonShowCurrency.UseVisualStyleBackColor = true;
+            this.buttonShowCurrency.Click += new System.EventHandler(this.buttonShowCurrency_Click);
+            this.buttonShowCurrency.MouseEnter += new System.EventHandler(this.buttonShowCurrency_MouseEnter);
+            this.buttonShowCurrency.MouseLeave += new System.EventHandler(this.buttonShowCurrency_MouseLeave);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(360, 564);
-            this.Controls.Add(this.buttonDollar);
-            this.Controls.Add(this.buttonCorrectPrice);
+            this.Controls.Add(this.buttonShowCurrency);
+            this.Controls.Add(this.buttonEditData);
             this.Controls.Add(this.buttonCheckPrice);
             this.Name = "MainForm";
             this.Text = "Currency Exchange";
@@ -86,8 +86,8 @@
         #endregion
 
         private System.Windows.Forms.Button buttonCheckPrice;
-        private System.Windows.Forms.Button buttonCorrectPrice;
-        private System.Windows.Forms.Button buttonDollar;
+        private System.Windows.Forms.Button buttonEditData;
+        private System.Windows.Forms.Button buttonShowCurrency;
     }
 }
 

@@ -52,12 +52,18 @@
     <Compile Include="CheckPricesWindow.Designer.cs">
       <DependentUpon>CheckPricesWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="DollarPic.cs" />
-    <Compile Include="DollarWindow.cs">
+    <Compile Include="CurrencyDisplayWindow_Subwindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DollarWindow.Designer.cs">
-      <DependentUpon>DollarWindow.cs</DependentUpon>
+    <Compile Include="CurrencyDisplayWindow_Subwindow.Designer.cs">
+      <DependentUpon>CurrencyDisplayWindow_Subwindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CurrencyPic.cs" />
+    <Compile Include="CurrencyDisplayWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CurrencyDisplayWindow.Designer.cs">
+      <DependentUpon>CurrencyDisplayWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -78,8 +84,11 @@
     <EmbeddedResource Include="CheckPricesWindow.resx">
       <DependentUpon>CheckPricesWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DollarWindow.resx">
-      <DependentUpon>DollarWindow.cs</DependentUpon>
+    <EmbeddedResource Include="CurrencyDisplayWindow.resx">
+      <DependentUpon>CurrencyDisplayWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CurrencyDisplayWindow_Subwindow.resx">
+      <DependentUpon>CurrencyDisplayWindow_Subwindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -117,8 +126,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="images\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

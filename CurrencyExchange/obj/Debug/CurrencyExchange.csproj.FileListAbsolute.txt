@@ -8,5 +8,6 @@ C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAW
 C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.csproj.CoreCompileInputs.cache
 C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.exe
 C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.pdb
-C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.DollarWindow.resources
 C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.CheckPricesWindow.resources
+C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.CurrencyDisplayWindow.resources
+C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.CurrencyDisplayWindow_Subwindow.resources

@@ -7,21 +7,23 @@ using System.Threading.Tasks;
 
 namespace CurrencyExchange
 {
-    class DollarPic
+    class CurrencyPic
     {
         Image image;
         float direction;
         float x, y;
-
-        public DollarPic()
-        {
-            string imagePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"images\dollar.png");
-            image = Image.FromFile(imagePath);
-        }
+        string symbol;
 
         public float Direction { get => direction; set => direction = value; }
         public float X { get => x; set => x = value; }
         public float Y { get => y; set => y = value; }
+        public string Symbol { get => symbol; set => symbol = value; }
+
+        public CurrencyPic(string imagePath)
+        {
+            //string imagePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, $@"images\{Symbol}.png");
+            image = Image.FromFile(imagePath);
+        }
 
         public void Draw(Graphics grph)
         {
