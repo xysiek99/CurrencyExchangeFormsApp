@@ -18,14 +18,21 @@ namespace CurrencyExchange
         }
 
         private void CheckPrices_Load(object sender, EventArgs e)
-        {
-            this.___CURRENCYTableAdapter.Fill(this.kASETY_407_02DataSet.@__CURRENCY);
+        {            
+            DBCurrency dbCurrency = new DBCurrency();
+            var currencyData = dbCurrency.Currencies.ToList();
+
+            currencyBindingSource1.DataSource = currencyData;
         }
 
         private void searchSymbolBox_TextChanged(object sender, EventArgs e)
         {
-            // metoda Fill wykonuje zapytanie do bazy danych !!!!!!!!!!!!!!!! 
-            ___CURRENCYTableAdapter.FillByCurrencySymbol(kASETY_407_02DataSet.@__CURRENCY, searchSymbolBox.Text);
+            DBCurrency dbCurrency = new DBCurrency();
+            var currencyData = dbCurrency.Currencies
+                .Where(curr => curr.Symbol.StartsWith(searchSymbolBox.Text) || curr.Name.StartsWith(searchSymbolBox.Text))
+                .ToList();
+
+            currencyBindingSource1.DataSource = currencyData;
         }
     }
 }

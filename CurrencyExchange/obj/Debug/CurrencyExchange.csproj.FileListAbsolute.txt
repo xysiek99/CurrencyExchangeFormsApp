@@ -11,3 +11,11 @@ C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAW
 C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.CheckPricesWindow.resources
 C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.CurrencyDisplayWindow.resources
 C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.CurrencyDisplayWindow_Subwindow.resources
+C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\bin\Debug\EntityFramework.dll
+C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\bin\Debug\EntityFramework.xml
+C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.csproj.CopyComplete
+C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.Migrations.Init.resources
+C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.Migrations.Change_in_DateTime_property.resources
+C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.Migrations.Change_Float_to_Double.resources

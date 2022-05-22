@@ -29,127 +29,124 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.seacrhSymbolLabel = new System.Windows.Forms.Label();
             this.searchSymbolBox = new System.Windows.Forms.TextBox();
-            this.currencyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.symbolDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cURRENCYBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.kASETY_407_02DataSet = new CurrencyExchange.KASETY_407_02DataSet();
-            this.___CURRENCYTableAdapter = new CurrencyExchange.KASETY_407_02DataSetTableAdapters.@__CURRENCYTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cURRENCYBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kASETY_407_02DataSet)).BeginInit();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.currencyBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.symbolDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.updatedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyBindingSource1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.currencyDataGridViewTextBoxColumn,
-            this.symbolDataGridViewTextBoxColumn,
-            this.Price});
-            this.dataGridView1.DataSource = this.cURRENCYBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 92);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(454, 690);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // Price
-            // 
-            this.Price.DataPropertyName = "Price";
-            this.Price.HeaderText = "Price (in PLN)";
-            this.Price.MinimumWidth = 6;
-            this.Price.Name = "Price";
-            this.Price.ReadOnly = true;
-            this.Price.Width = 125;
             // 
             // seacrhSymbolLabel
             // 
             this.seacrhSymbolLabel.AutoSize = true;
             this.seacrhSymbolLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.seacrhSymbolLabel.Location = new System.Drawing.Point(12, 9);
+            this.seacrhSymbolLabel.Location = new System.Drawing.Point(50, 16);
             this.seacrhSymbolLabel.Name = "seacrhSymbolLabel";
-            this.seacrhSymbolLabel.Size = new System.Drawing.Size(144, 20);
+            this.seacrhSymbolLabel.Size = new System.Drawing.Size(286, 20);
             this.seacrhSymbolLabel.TabIndex = 1;
-            this.seacrhSymbolLabel.Text = "Search by Symbol";
+            this.seacrhSymbolLabel.Text = "Search by Symbol or Currency Name";
             // 
             // searchSymbolBox
             // 
             this.searchSymbolBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.searchSymbolBox.Location = new System.Drawing.Point(16, 40);
+            this.searchSymbolBox.Location = new System.Drawing.Point(412, 9);
             this.searchSymbolBox.Name = "searchSymbolBox";
-            this.searchSymbolBox.Size = new System.Drawing.Size(140, 27);
+            this.searchSymbolBox.Size = new System.Drawing.Size(212, 27);
             this.searchSymbolBox.TabIndex = 2;
             this.searchSymbolBox.TextChanged += new System.EventHandler(this.searchSymbolBox_TextChanged);
             // 
-            // currencyDataGridViewTextBoxColumn
+            // dataGridView2
             // 
-            this.currencyDataGridViewTextBoxColumn.DataPropertyName = "Currency";
-            this.currencyDataGridViewTextBoxColumn.HeaderText = "Currency";
-            this.currencyDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.currencyDataGridViewTextBoxColumn.Name = "currencyDataGridViewTextBoxColumn";
-            this.currencyDataGridViewTextBoxColumn.ReadOnly = true;
-            this.currencyDataGridViewTextBoxColumn.Width = 125;
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nameDataGridViewTextBoxColumn,
+            this.symbolDataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn1,
+            this.updatedDataGridViewTextBoxColumn});
+            this.dataGridView2.DataSource = this.currencyBindingSource1;
+            this.dataGridView2.Location = new System.Drawing.Point(12, 45);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(656, 560);
+            this.dataGridView2.TabIndex = 3;
             // 
-            // symbolDataGridViewTextBoxColumn
+            // currencyBindingSource1
             // 
-            this.symbolDataGridViewTextBoxColumn.DataPropertyName = "Symbol";
-            this.symbolDataGridViewTextBoxColumn.HeaderText = "Symbol";
-            this.symbolDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.symbolDataGridViewTextBoxColumn.Name = "symbolDataGridViewTextBoxColumn";
-            this.symbolDataGridViewTextBoxColumn.ReadOnly = true;
-            this.symbolDataGridViewTextBoxColumn.Width = 75;
+            this.currencyBindingSource1.DataSource = typeof(CurrencyExchange.Currency);
             // 
-            // cURRENCYBindingSource
+            // nameDataGridViewTextBoxColumn
             // 
-            this.cURRENCYBindingSource.DataMember = "__CURRENCY";
-            this.cURRENCYBindingSource.DataSource = this.kASETY_407_02DataSet;
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nameDataGridViewTextBoxColumn.Width = 150;
             // 
-            // kASETY_407_02DataSet
+            // symbolDataGridViewTextBoxColumn1
             // 
-            this.kASETY_407_02DataSet.DataSetName = "KASETY_407_02DataSet";
-            this.kASETY_407_02DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.symbolDataGridViewTextBoxColumn1.DataPropertyName = "Symbol";
+            this.symbolDataGridViewTextBoxColumn1.HeaderText = "Symbol";
+            this.symbolDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.symbolDataGridViewTextBoxColumn1.Name = "symbolDataGridViewTextBoxColumn1";
+            this.symbolDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.symbolDataGridViewTextBoxColumn1.Width = 75;
             // 
-            // ___CURRENCYTableAdapter
+            // dataGridViewTextBoxColumn1
             // 
-            this.___CURRENCYTableAdapter.ClearBeforeFill = true;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Price";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Price (PLN)";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 75;
+            // 
+            // updatedDataGridViewTextBoxColumn
+            // 
+            this.updatedDataGridViewTextBoxColumn.DataPropertyName = "Updated";
+            this.updatedDataGridViewTextBoxColumn.HeaderText = "Updated";
+            this.updatedDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.updatedDataGridViewTextBoxColumn.Name = "updatedDataGridViewTextBoxColumn";
+            this.updatedDataGridViewTextBoxColumn.ReadOnly = true;
+            this.updatedDataGridViewTextBoxColumn.Width = 125;
             // 
             // CheckPricesWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(478, 794);
+            this.ClientSize = new System.Drawing.Size(674, 614);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.searchSymbolBox);
             this.Controls.Add(this.seacrhSymbolLabel);
-            this.Controls.Add(this.dataGridView1);
             this.Name = "CheckPricesWindow";
             this.Text = "CheckPrices";
             this.Load += new System.EventHandler(this.CheckPrices_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cURRENCYBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kASETY_407_02DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private KASETY_407_02DataSet kASETY_407_02DataSet;
-        private System.Windows.Forms.BindingSource cURRENCYBindingSource;
-        private KASETY_407_02DataSetTableAdapters.__CURRENCYTableAdapter ___CURRENCYTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn currencyDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn symbolDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
         private System.Windows.Forms.Label seacrhSymbolLabel;
         private System.Windows.Forms.TextBox searchSymbolBox;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.BindingSource currencyBindingSource1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn symbolDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn updatedDataGridViewTextBoxColumn;
     }
 }

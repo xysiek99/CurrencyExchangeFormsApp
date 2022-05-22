@@ -33,8 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,6 +61,7 @@
     <Compile Include="CheckPricesWindow.Designer.cs">
       <DependentUpon>CheckPricesWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="Currency.cs" />
     <Compile Include="CurrencyDisplayWindow_Subwindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,20 +75,27 @@
     <Compile Include="CurrencyDisplayWindow.Designer.cs">
       <DependentUpon>CurrencyDisplayWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="DBCurrency.cs" />
+    <Compile Include="DBObject.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="KASETY_407_02DataSet.cs">
-      <DependentUpon>KASETY_407_02DataSet.xsd</DependentUpon>
+    <Compile Include="Migrations\202205221221409_Init.cs" />
+    <Compile Include="Migrations\202205221221409_Init.Designer.cs">
+      <DependentUpon>202205221221409_Init.cs</DependentUpon>
     </Compile>
-    <Compile Include="KASETY_407_02DataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>KASETY_407_02DataSet.xsd</DependentUpon>
+    <Compile Include="Migrations\202205221357225_Change_in_DateTime_property.cs" />
+    <Compile Include="Migrations\202205221357225_Change_in_DateTime_property.Designer.cs">
+      <DependentUpon>202205221357225_Change_in_DateTime_property.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202205221538485_Change_Float_to_Double.cs" />
+    <Compile Include="Migrations\202205221538485_Change_Float_to_Double.Designer.cs">
+      <DependentUpon>202205221538485_Change_Float_to_Double.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CheckPricesWindow.resx">
@@ -93,6 +110,15 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205221221409_Init.resx">
+      <DependentUpon>202205221221409_Init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205221357225_Change_in_DateTime_property.resx">
+      <DependentUpon>202205221357225_Change_in_DateTime_property.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205221538485_Change_Float_to_Double.resx">
+      <DependentUpon>202205221538485_Change_Float_to_Double.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -102,17 +128,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="KASETY_407_02DataSet.xsc">
-      <DependentUpon>KASETY_407_02DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="KASETY_407_02DataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>KASETY_407_02DataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="KASETY_407_02DataSet.xss">
-      <DependentUpon>KASETY_407_02DataSet.xsd</DependentUpon>
-    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Currency.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
