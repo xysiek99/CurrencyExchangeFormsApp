@@ -15,17 +15,6 @@ namespace CurrencyExchange
         public MainForm()
         {
             InitializeComponent();
-            /*
-            DBCurrency dbCurrency = new DBCurrency();
-            Currency krw = new Currency();
-            krw.Name = "Won Poludniowokoreanski";
-            krw.Symbol = "KRW";
-            krw.Price = 0.3454;
-            krw.Updated = DateTime.Now;
-
-            dbCurrency.Currencies.Add(krw);
-            dbCurrency.SaveChanges();
-            */
 
             Currency krw = new Currency();
             krw.Name = "Won Poludniowokoreanski";
@@ -60,6 +49,12 @@ namespace CurrencyExchange
         private void buttonEditData_MouseLeave(object sender, EventArgs e)
         {
             buttonEditData.BackColor = Color.Transparent;
+        }
+
+        private void buttonEditData_Click(object sender, EventArgs e)
+        {
+            CurrencyAddWindow currencyAddWindow = new CurrencyAddWindow();
+            currencyAddWindow.Show();
         }
 
         // buttonShowCurrency

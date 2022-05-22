@@ -53,6 +53,7 @@
             this.buttonEditData.TabIndex = 1;
             this.buttonEditData.Text = "Edit Data";
             this.buttonEditData.UseVisualStyleBackColor = true;
+            this.buttonEditData.Click += new System.EventHandler(this.buttonEditData_Click);
             this.buttonEditData.MouseEnter += new System.EventHandler(this.buttonEditData_MouseEnter);
             this.buttonEditData.MouseLeave += new System.EventHandler(this.buttonEditData_MouseLeave);
             // 

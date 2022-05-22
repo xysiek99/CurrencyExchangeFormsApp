@@ -62,6 +62,12 @@
       <DependentUpon>CheckPricesWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Currency.cs" />
+    <Compile Include="CurrencyAddWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CurrencyAddWindow.Designer.cs">
+      <DependentUpon>CurrencyAddWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="CurrencyDisplayWindow_Subwindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CheckPricesWindow.resx">
       <DependentUpon>CheckPricesWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CurrencyAddWindow.resx">
+      <DependentUpon>CurrencyAddWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CurrencyDisplayWindow.resx">
       <DependentUpon>CurrencyDisplayWindow.cs</DependentUpon>
