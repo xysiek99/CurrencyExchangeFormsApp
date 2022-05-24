@@ -21,3 +21,5 @@ C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAW
 C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.Migrations.Change_Float_to_Double.resources
 C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.CurrencyAddWindow.resources
 C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.Migrations.AddReqiuredField.resources
+C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.Migrations.Added_Symbol_Length.resources
+C:\Users\Krzysiek\Documents\studia\WWSI\semestry\czwarty\jipp\NA_ZALICZENIE_PRAWDZIWE\CurrencyExchange\CurrencyExchange\obj\Debug\CurrencyExchange.Migrations.FIXED_Added_Symbol_Length.resources

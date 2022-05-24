@@ -105,6 +105,14 @@
     <Compile Include="Migrations\202205241626513_AddReqiuredField.Designer.cs">
       <DependentUpon>202205241626513_AddReqiuredField.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202205241634495_Added_Symbol_Length.cs" />
+    <Compile Include="Migrations\202205241634495_Added_Symbol_Length.Designer.cs">
+      <DependentUpon>202205241634495_Added_Symbol_Length.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205241638300_FIXED_Added_Symbol_Length.cs" />
+    <Compile Include="Migrations\202205241638300_FIXED_Added_Symbol_Length.Designer.cs">
+      <DependentUpon>202205241638300_FIXED_Added_Symbol_Length.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -134,6 +142,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202205241626513_AddReqiuredField.resx">
       <DependentUpon>202205241626513_AddReqiuredField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205241634495_Added_Symbol_Length.resx">
+      <DependentUpon>202205241634495_Added_Symbol_Length.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205241638300_FIXED_Added_Symbol_Length.resx">
+      <DependentUpon>202205241638300_FIXED_Added_Symbol_Length.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

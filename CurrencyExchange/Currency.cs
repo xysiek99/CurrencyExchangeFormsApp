@@ -9,10 +9,10 @@ using System.Windows.Forms;
 
 namespace CurrencyExchange
 {
-    public class Currency:DBObject
+    public class Currency : DBObject
     {
         [Required] public string Name { get; set; }
-        [Required] public string Symbol { get; set; }
+        [Required] [MaxLength(3)] [MinLength(3)] public string Symbol { get; set; }
         [Required] public double Price { get; set; }
         public DateTime? Updated { get; set; } // ? - umozliwia Null'e
 
