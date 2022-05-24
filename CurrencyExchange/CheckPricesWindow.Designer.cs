@@ -32,11 +32,11 @@
             this.seacrhSymbolLabel = new System.Windows.Forms.Label();
             this.searchSymbolBox = new System.Windows.Forms.TextBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.currencyBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.symbolDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.updatedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.currencyBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.currencyBindingSource1)).BeginInit();
             this.SuspendLayout();
@@ -78,10 +78,7 @@
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(656, 560);
             this.dataGridView2.TabIndex = 3;
-            // 
-            // currencyBindingSource1
-            // 
-            this.currencyBindingSource1.DataSource = typeof(CurrencyExchange.Currency);
+            this.dataGridView2.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellEndEdit);
             // 
             // nameDataGridViewTextBoxColumn
             // 
@@ -116,6 +113,10 @@
             this.updatedDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.updatedDataGridViewTextBoxColumn.Name = "updatedDataGridViewTextBoxColumn";
             this.updatedDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // currencyBindingSource1
+            // 
+            this.currencyBindingSource1.DataSource = typeof(CurrencyExchange.Currency);
             // 
             // CheckPricesWindow
             // 

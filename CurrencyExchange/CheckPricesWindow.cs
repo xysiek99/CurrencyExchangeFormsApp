@@ -34,5 +34,32 @@ namespace CurrencyExchange
 
             currencyBindingSource1.DataSource = currencyData;
         }
+
+        private void dataGridView2_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            DBCurrency dbCurrency = new DBCurrency();
+            var currencyData = dbCurrency.Currencies.ToList();
+
+            string updatedPrice = dataGridView2.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
+
+            foreach (Currency existingCurr in currencyData)
+            {
+                if (existingCurr.Symbol.ToString() == dataGridView2.Rows[e.RowIndex].Cells[e.ColumnIndex - 1].Value.ToString())
+                {
+                    try
+                    {
+                        existingCurr.Price = Convert.ToDouble(updatedPrice);
+                        existingCurr.Updated = DateTime.Now;
+                        dataGridView2.Rows[e.RowIndex].Cells[e.ColumnIndex + 1].Value = existingCurr.Updated;
+                    }
+                    catch (Exception err)
+                    {
+                        MessageBox.Show(err.Message);
+                    }
+                }
+            }
+
+            dbCurrency.SaveChanges();
+        }
     }
 }
