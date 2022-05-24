@@ -101,6 +101,10 @@
     <Compile Include="Migrations\202205221538485_Change_Float_to_Double.Designer.cs">
       <DependentUpon>202205221538485_Change_Float_to_Double.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202205241626513_AddReqiuredField.cs" />
+    <Compile Include="Migrations\202205241626513_AddReqiuredField.Designer.cs">
+      <DependentUpon>202205241626513_AddReqiuredField.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -127,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202205221538485_Change_Float_to_Double.resx">
       <DependentUpon>202205221538485_Change_Float_to_Double.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205241626513_AddReqiuredField.resx">
+      <DependentUpon>202205241626513_AddReqiuredField.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

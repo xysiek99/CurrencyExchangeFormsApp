@@ -21,9 +21,18 @@ namespace CurrencyExchange
         {
             try
             {
+                Currency newCurr = new Currency();
+
                 string currName = textBoxCurrencyName.Text;
                 string currSymbol = textBoxCurrencySymbol.Text;
                 double currPrice = double.Parse(textBoxCurrencyPrice.Text);
+
+                newCurr.Name = currName;
+                newCurr.Symbol = currSymbol;
+                newCurr.Price = currPrice;
+                newCurr.Updated = DateTime.Now;
+
+                newCurr.AddToDB();
                 this.Close();
             }
             catch (Exception err)

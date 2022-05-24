@@ -74,7 +74,6 @@
             this.dataGridView2.DataSource = this.currencyBindingSource1;
             this.dataGridView2.Location = new System.Drawing.Point(12, 45);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(656, 560);
@@ -108,7 +107,6 @@
             this.dataGridViewTextBoxColumn1.HeaderText = "Price (PLN)";
             this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             this.dataGridViewTextBoxColumn1.Width = 75;
             // 
             // updatedDataGridViewTextBoxColumn
@@ -117,7 +115,6 @@
             this.updatedDataGridViewTextBoxColumn.HeaderText = "Updated";
             this.updatedDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.updatedDataGridViewTextBoxColumn.Name = "updatedDataGridViewTextBoxColumn";
-            this.updatedDataGridViewTextBoxColumn.ReadOnly = true;
             this.updatedDataGridViewTextBoxColumn.Width = 125;
             // 
             // CheckPricesWindow

@@ -15,12 +15,14 @@ namespace CurrencyExchange
         public MainForm()
         {
             InitializeComponent();
-
+            
+            /*
             Currency krw = new Currency();
             krw.Name = "Won Poludniowokoreanski";
             krw.Symbol = "KRW";
             krw.Price = 0.3454;
             krw.AddToDB();
+            */
         }
 
         // buttonCheckPrice
