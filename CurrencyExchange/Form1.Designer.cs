@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.buttonCheckPrice = new System.Windows.Forms.Button();
-            this.buttonEditData = new System.Windows.Forms.Button();
+            this.buttonAddCurrency = new System.Windows.Forms.Button();
             this.buttonShowCurrency = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -45,17 +45,17 @@
             this.buttonCheckPrice.MouseEnter += new System.EventHandler(this.buttonCheckPrice_MouseEnter);
             this.buttonCheckPrice.MouseLeave += new System.EventHandler(this.buttonCheckPrice_MouseLeave);
             // 
-            // buttonEditData
+            // buttonAddCurrency
             // 
-            this.buttonEditData.Location = new System.Drawing.Point(43, 217);
-            this.buttonEditData.Name = "buttonEditData";
-            this.buttonEditData.Size = new System.Drawing.Size(267, 60);
-            this.buttonEditData.TabIndex = 1;
-            this.buttonEditData.Text = "Edit Data";
-            this.buttonEditData.UseVisualStyleBackColor = true;
-            this.buttonEditData.Click += new System.EventHandler(this.buttonEditData_Click);
-            this.buttonEditData.MouseEnter += new System.EventHandler(this.buttonEditData_MouseEnter);
-            this.buttonEditData.MouseLeave += new System.EventHandler(this.buttonEditData_MouseLeave);
+            this.buttonAddCurrency.Location = new System.Drawing.Point(43, 217);
+            this.buttonAddCurrency.Name = "buttonAddCurrency";
+            this.buttonAddCurrency.Size = new System.Drawing.Size(267, 60);
+            this.buttonAddCurrency.TabIndex = 1;
+            this.buttonAddCurrency.Text = "Add currency";
+            this.buttonAddCurrency.UseVisualStyleBackColor = true;
+            this.buttonAddCurrency.Click += new System.EventHandler(this.buttonAddCurrency_Click);
+            this.buttonAddCurrency.MouseEnter += new System.EventHandler(this.buttonAddCurrency_MouseEnter);
+            this.buttonAddCurrency.MouseLeave += new System.EventHandler(this.buttonAddCurrency_MouseLeave);
             // 
             // buttonShowCurrency
             // 
@@ -75,7 +75,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(360, 564);
             this.Controls.Add(this.buttonShowCurrency);
-            this.Controls.Add(this.buttonEditData);
+            this.Controls.Add(this.buttonAddCurrency);
             this.Controls.Add(this.buttonCheckPrice);
             this.Name = "MainForm";
             this.Text = "Currency Exchange";
@@ -87,7 +87,7 @@
         #endregion
 
         private System.Windows.Forms.Button buttonCheckPrice;
-        private System.Windows.Forms.Button buttonEditData;
+        private System.Windows.Forms.Button buttonAddCurrency;
         private System.Windows.Forms.Button buttonShowCurrency;
     }
 }

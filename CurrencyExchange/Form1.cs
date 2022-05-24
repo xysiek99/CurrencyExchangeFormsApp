@@ -42,18 +42,18 @@ namespace CurrencyExchange
             checkPricesWindow.Show();
         }
 
-        // buttonCorrectPrice
-        private void buttonEditData_MouseEnter(object sender, EventArgs e)
+        // buttonAddCurrency
+        private void buttonAddCurrency_MouseEnter(object sender, EventArgs e)
         {
-            buttonEditData.BackColor = Color.IndianRed;
+            buttonAddCurrency.BackColor = Color.IndianRed;
         }
 
-        private void buttonEditData_MouseLeave(object sender, EventArgs e)
+        private void buttonAddCurrency_MouseLeave(object sender, EventArgs e)
         {
-            buttonEditData.BackColor = Color.Transparent;
+            buttonAddCurrency.BackColor = Color.Transparent;
         }
 
-        private void buttonEditData_Click(object sender, EventArgs e)
+        private void buttonAddCurrency_Click(object sender, EventArgs e)
         {
             CurrencyAddWindow currencyAddWindow = new CurrencyAddWindow();
             currencyAddWindow.Show();
