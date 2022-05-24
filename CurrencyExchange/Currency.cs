@@ -9,8 +9,12 @@ using System.Windows.Forms;
 
 namespace CurrencyExchange
 {
+    public delegate void CurrencyOperationDBHandler(string requiredValue);
     public class Currency : DBObject
     {
+        public event CurrencyOperationDBHandler CurrencyOperationDBSuccess;
+        public event CurrencyOperationDBHandler CurrencyOperationDBFailure;
+
         [Required] public string Name { get; set; }
         [Required] [MaxLength(3)] [MinLength(3)] public string Symbol { get; set; }
         [Required] public double Price { get; set; }
@@ -37,15 +41,16 @@ namespace CurrencyExchange
                 }
             }
 
-            if (currInBase)
-            {
-                MessageBox.Show("Currency already added to Database");
-            }
-            else
+            if (!currInBase)
             {
                 dbCurrency.Currencies.Add(newCurr);
                 dbCurrency.SaveChanges();
-                MessageBox.Show("Currency added succesfully");
+
+                CurrencyOperationDBSuccess?.Invoke(newCurr.Symbol);
+            }
+            else
+            {
+                CurrencyOperationDBFailure?.Invoke(newCurr.Symbol);
             }
         }
     }

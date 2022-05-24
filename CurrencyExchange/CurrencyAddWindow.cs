@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,10 +20,12 @@ namespace CurrencyExchange
 
         private void buttonAddCurrency_Click(object sender, EventArgs e)
         {
+            Currency newCurr = new Currency();
+            newCurr.CurrencyOperationDBSuccess += CurrencyDBOperationSave;
+            newCurr.CurrencyOperationDBFailure += CurrencyDBOperationReject;
+
             try
             {
-                Currency newCurr = new Currency();
-
                 string currName = textBoxCurrencyName.Text;
                 string currSymbol = textBoxCurrencySymbol.Text;
                 double currPrice = double.Parse(textBoxCurrencyPrice.Text);
@@ -39,6 +42,16 @@ namespace CurrencyExchange
             {
                 MessageBox.Show(err.Message);
             }
+        }
+
+        private void CurrencyDBOperationSave(string newCurrSymbol)
+        {
+            File.AppendAllText("CurrencyOperationsLog.txt", $"{DateTime.Now} | Currency {newCurrSymbol} added to database\n");
+        }
+
+        private void CurrencyDBOperationReject(string newCurrSymbol)
+        {
+            MessageBox.Show("Currency already existing in DataBase");
         }
     }
 }
